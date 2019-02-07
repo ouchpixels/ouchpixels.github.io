@@ -1,3 +1,3 @@
 ## This is a moment of madness.
-[My Website](https://aniarubin.github.io).
+[My Website](https://aniarubin.github.io)
 
