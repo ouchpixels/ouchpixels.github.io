@@ -3,235 +3,211 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anna The Scavenger Github Page</title>
-  <meta name="author" content="Anna The Scavenger">
-  <meta name="description" content="Anna The Scavenger Github Homepage">
-  <link href="https://fonts.googleapis.com/css?family=Coustard&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz" rel="stylesheet">
+  <title>Anna's Website | Creative Developer</title>
+  <meta name="author" content="Anna">
+  <meta name="description" content="Anna is a Creative Software Developer. / Javascript, React.js, Vue.js, Processing">
   <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon"> 
   <link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16" />
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-
   <div class="main">
     <header>
-      <h1>Anna the Scavenger</h1>
-      <h2>Software Developer from Tel Aviv</h2>
-      <h3>I build beautiful things for the Web, for you and for myself. And for many other strangers
-        to enjoy.
+      <h1 aria-label="Ania's Creative Code">
+        <span>A</span>
+        <span>n</span>
+        <span>n</span>
+        <span>a</span>
         <br>
-      </h3>
-    </header> 
-  
-    <section class="details">
-      <div class="details__title">
-        <h4>Skills</h4>
-      </div>
-      <div  class="details__data">
-        <ul class="list__skills">
-          <li>Javascript / ES6+</li>
-          <li>HTML</li>
-          <li>React.js</li>
-          <li>CSS</li>
-          <li>Vue.js</li>
-          <li>SVG</li>
-          <li>GSAP</li>
-          <br>
-          <li>jQuery</li>
-          <li>Git</li>
-          <li>Ruby on Rails</li>
-        </ul>
-      </div>
-    </section>
-    <section class="details">
-      <div class="details__title">
-        <h4>Work</h4>
-      </div>
-      <div class="details__data">
-        <ul class="list__links">
-          <li><a class="list__links__item--animated" href="https://codepen.io/ScavengerFrontend/" target="_blank">Codepen</a></li>
-          <li><a class="list__links__item--animated" href="https://github.com/aniarubin" target="_blank">Github</a></li>
-        </ul>
-      </div>
-    </section>
-    <section class="details">
-      <div class="details__title">
-        <h4>Contact</h4>
-      </div>
-      <div class="details__data">
-        <p>Email</p>
-      </div>
-    </section>
-	</div>
+        <span>M</span>
+        <span>a</span>
+        <span>k</span>
+        <span>e</span>
+        <span>s</span>
+        <br>
+        <span>T</span>
+        <span>h</span>
+        <span>i</span>
+        <span>n</span>
+        <span>g</span>
+        <span>s</span>
+        <span>.</span>
+        <br>
+      </h1>
+      <h2>
+        Hi<span class="exclamation">!</span> My name is Anna Pawlowska.
+        <br>
+        I am a Creative Developer and maker.
+        <br>
+        <br>
+        In other words, I build interactive animated things to tell stories, mostly for the Web. I also explore new technologies relating body, gesture and physical space. 
+        <br>
+        Sometimes my work has meaning, sometimes it's just for fun. 
+        <br>
+        <br>
+        <!-- (Here I tried to avoid the word "storytelling", but failed.
+        So, yeah, I do visual storytelling with code.) -->
+        <br>
+        
+        <span class="links">You can find me around the Web on <a href="https://codepen.io/ScavengerFrontend/" target="_blank">Codepen</a> and <a href="https://github.com/aniarubin" target="_blank">Github</a>.</span>
+        <br>
+        <br>
+        <span class="links">Get my resume <a href="https://codepen.io/ScavengerFrontend/live/6b8d10e82ade94c317cc52a530c7e125/">here</a>.</span>✨
+<!--         <br> -->
+<!--         <br> -->
+<!--         Recently I started my generative art & machine learning challenge. You can see my progress on <a href="https://www.instagram.com/shiny_panini/" target="_blank">Instagram</a>. -->
+      </h2>
+    </header>
+  </div>
 </body>
 
 <style>
-
-:root {
-  --distance: 150px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@font-face {
-  font-family: 'Tiempos';
-  src: url('Tiempos.woff') ;
-}
-
-@font-face {
-  font-family: 'America';
-  src: url('America-Light.otf') ;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-  font-family: Arial, sans-serif;
-  font-size: 18px;
-  overflow-x: hidden;
-  box-sizing: border-box;
-  background-color: white;
-  color: black;
-}
-
-h1 {
-  font-family: 'Coustard', Arial;
-  font-size: 3em;
-  font-weight: normal;
-  margin-bottom: 0;
-}
-h2 {
-  font-weight: normal;
-  color: #7b7979;
-  font-size: 1em;
-  font-style: italic;
-  margin: 0;
-  padding: 0;
-}
-h3 {
-  font-size: 2.25em;
-  color: #7b7979;
-  font-weight: normal;
-  font-size: 2em;
-  margin: 2em 0 0.5em 0;
-}
-h4 {
-  font-family: Arial;
-  font-weight: normal;
-  font-style: italic;
-  color: #7b7979;
-}
-
-header {
-  margin-left: var(--distance);
-  margin-bottom: 50px;
-  width: 70%;
-}
-
-header:after {
-    display: block;
-    content: '';
-    background: black;
-    height: 2px;
-    margin-top: 10px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-div.main {
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 50px;
-  padding-left: 20vw;
-}
-
-section.details {
-  display: flex;
-  align-items: baseline;
-}
-
-.details__title {
-  width: var(--distance);
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-ul.list__skills {
-  display: inline;
-  margin-left: 0;
-  line-height: 1.75;
-  display: inline-block;
-}
-
-ul.list__skills > li {
-  float: left;
-  list-style: outside none none;
-  width: 50%;
-}
-
-ul.list__links > a {
-  margin: 0;
-  padding: 0;
-  display: block;
-}
-
-ul.list__links > li {
-  margin-bottom: 10px;
-}
-
-.list__links__item--animated {
-    display: inline-block;
-    color: black;
-    text-decoration: none;
-}
-
-.list__links__item--animated::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: black;
-    transition: width .4s ease-in-out;
-}
-
-.list__links__item--animated:hover::after {
-    width: 100%;
-}
-
-@media(max-width: 720px) {
-  header {
-    width: 95%;
-    margin-bottom: 20px;
+  span.links {
+    color: fuchsia;
   }
-  h1 {
-    font-size: 2.75em;
-  }
-  h3 {
-    font-size: 1.3em;
-    line-height: 1.5;
-  }
-  div.main {
-    width: 100%;
-    margin-top: 0.25em;
-    padding: 1.7em;
-  }
-  header {
-    margin-left: 0;
-  }
-  section.details {
-    flex-direction: column;
-  }
-}
-
+  
+/*   span.links > a { */
+/*     color: #00bed8; */
+/*     border-bottom: 3px solid #fff; */
+/*   } */
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+  $(function() {
+    // SMOOTH SCROLL
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^//'') == this.pathname.replace(/^//'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+            return false;
+        }
+      }
+    });
+    function isNear( $element, distance, event ) {
+        
+        var left = $element.offset().left - distance,
+            top = $element.offset().top - distance,
+            right = left + $element.width() + ( 2 * distance ),
+            bottom = top + $element.height() + ( 2 * distance ),
+            // get current location of cursor 
+            x = event.pageX,
+            y = event.pageY;
+            
+        return ( x > left && x < right && y > top && y < bottom );
+        
+    };
+    Math.Vector = function (x,y) {
+        this.x = x;
+        this.y = y;
+    }
+    Math.Vector.prototype = {
+        clone: function () {
+            return new Math.Vector(this.x, this.y);
+        },
+        negate: function () {
+            this.x = -this.x;
+            this.y = -this.y;
+            return this;
+        },
+        neg: function () {
+            return this.clone().negate();
+        },
+        addeq: function (v) {
+            this.x += v.x;
+            this.y += v.y;
+            return this;
+        },
+        subeq: function (v) {
+            return this.addeq(v.neg());
+        },
+        add: function (v) {
+            return this.clone().addeq(v);
+        },
+        sub: function (v) {
+            return this.clone().subeq(v);
+        },
+        multeq: function (c) {
+            this.x *= c;
+            this.y *= c;
+            return this;
+        },
+        diveq: function (c) {
+            this.x /= c;
+            this.y /= c;
+            return this;
+        },
+        mult: function (c) {
+            return this.clone().multeq(c);
+        },
+        div: function (c) {
+            return this.clone().diveq(c);
+        },
+        dot: function (v) {
+            return this.x * v.x + this.y * v.y;
+        },
+        length: function () {
+            return Math.sqrt(this.dot(this));
+        },
+        normal: function () {
+            return this.clone().diveq(this.length());
+        }
+    };
+    function evade($element, evt) {
+        var $this = $element,
+            corner = $this.offset(),
+            center = {x: corner.left + $this.outerWidth() / 2, y: corner.top + $this.outerHeight() / 2},
+            dist = new Math.Vector(center.x - evt.pageX, center.y - evt.pageY),
+            closest = 100;
+        
+        // proximity test
+        if (dist.length() >= closest) {
+          return;
+        }
+        // calculate new position
+        var delta = dist.normal().multeq(closest).sub(dist),
+          newCorner = {left: corner.left + delta.x, top: corner.top + delta.y};
+        // bounds check
+        if (newCorner.left + $this.outerWidth() > $(document).width()) {
+          newCorner.left = $(document).width() - $this.outerWidth();
+        }
+        else if (newCorner.top + $this.outerHeight() > $(document).height()) {
+          newCorner.top = $(document).height() - $this.outerHeight();
+        }
+        // move letter
+        $this.finish();
+        newCorner.left = Math.max(Math.min(newCorner.left, $this.data('baseLeft')+30), $this.data('baseLeft')-30);
+        newCorner.top = Math.max(Math.min(newCorner.top, $this.data('baseTop')+30), $this.data('baseTop')-30);
+        $this.animate({
+          top: newCorner.top - $this.data('baseTop'),
+          left: newCorner.left - $this.data('baseLeft')
+        });
+    }
+    $('h1 span').each(function(i, letter) {
+      $(letter).data('baseLeft', $(letter).offset().left);
+      $(letter).data('baseTop', $(letter).offset().top);
+    });
+    $(window).on('mousemove',function(e){
+      $('h1 span').each(function(i, letter) {
+        // if (i != 0) { return }
+        var $letter = $(letter);
+        if (isNear($letter, 150, e)) {
+          evade($letter, e);
+        } else {
+          if (parseInt($letter.css('top')) != 0 || parseInt($letter.css('left')) != 0) {
+            $letter.animate({top: 0, left: 0 });
+          }
+        }
+      });
+    });
+  });
+</script>
+
+
 </html>
