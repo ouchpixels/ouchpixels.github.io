@@ -5,7 +5,7 @@ body {
   background: #f0ebe6;
   background: #eae3dc;
   font-family: 'Work Sans', sans-serif;
-  font-size: 22.5px;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .container__intro {
@@ -83,6 +83,7 @@ a {
 }
 
 @media (max-width: 800px) {
+  
   .container__intro {
     width: 80vw;
     margin: 2em;
@@ -98,5 +99,6 @@ a {
   .footer {
     margin-left: 2em;
   }
+
 
 }
