@@ -14,205 +14,31 @@
 </head>
 
 <body>
-  <div class="main">
-    <header>
-      <h1 aria-label="Anna's Creative Code">
-        <span>A</span>
-        <span>n</span>
-        <span>n</span>
-        <span>a</span>
-        <br>
-        <span>M</span>
-        <span>a</span>
-        <span>k</span>
-        <span>e</span>
-        <span>s</span>
-        <br>
-        <span>T</span>
-        <span>h</span>
-        <span>i</span>
-        <span>n</span>
-        <span>g</span>
-        <span>s</span>
-        <span>.</span>
-        <br>
-      </h1>
-      <h2>
-        <span class="introduction">Hi<span class="exclamation">!</span> My name is Anna.</span>
-        <br>
-        <br>
-        I'm a Frontend Developer and maker.🎆
-        <br>
-        In other words, I specialize in building responsive <br> and interactive user interfaces and web animations. 
-        <br>
-        <br>
-        My work includes games in <a href="https://codepen.io/ScavengerFrontend/live/XgBOPY" target="_blank">React.js</a>,
-        beautiful apps in <a href="https://codepen.io/ScavengerFrontend/live/QRbmPy" target="_blank">Vue.js</a>, creations in <a href="https://codepen.io/ScavengerFrontend" target="_blank">CSS Grid</a> and <a href="https://codepen.io/ScavengerFrontend" target="_blank">SVG</a>.
-        <br>
-        <br>
-        I advocate for a Web that works for everyone, <br>with accessibility and speed in mind.
-        <br>
-        <br>
-        <!-- (Here I tried to avoid the word "storytelling", but failed.
-        So, yeah, I do visual storytelling with code.) -->
-        <span class="links">You can find me around the Web on <a href="https://codepen.io/ScavengerFrontend/" target="_blank">Codepen</a> and <a href="https://github.com/aniarubin" target="_blank">Github</a>.</span>✨
-
-<!--         <br> -->
-<!--         <br> -->
-<!--         Recently I started my generative art & machine learning challenge. You can see my progress on <a href="https://www.instagram.com/shiny_panini/" target="_blank">Instagram</a>. -->
-      </h2>
-    </header>
+<div class="container">
+<div class="container__intro">
+  <h1>Hello,</h1>
+  <h2>I'm Anna, a creative developer <br>living in sunny Tel Aviv.</h2>
+  <p>I enjoy crafting delightful, interactive and surreal experiences for the Web, with a special love for 3D, code art, typography and animation.</p>
+  <p>This is what I'm good at:</p>
+  <p>js / three.js / webgl / svg / gsap</p>
+  <p>
+Any cool projects in mind? I'm available for freelance work - feel free to get in touch.
+</p>
+</div>
+<div class="container__links">
+  <div class="container__links--social">
+    <a href="https://twitter.com/ouch_pixels" target="_blank">Twitter</a>
+    <a href="https://codepen.io/ScavengerFrontend" target="_blank">Codepen</a>
+    <a href="https://github.com/aniarubin/" target="_blank">Github</a>
   </div>
-</body>
+  <div class="container__links--email">
+    <a href="mailto:hello@annacreative.dev">hello@annacreative.dev</a>  
+  </div>
+</div>
+</div>
+<footer class="highlight">Anna the Scavenger 2020.</footer>
 
-<style>
-  span.links {
-    color: fuchsia;
-  }
-  
-  span.introduction {
-    font-size: 1.7em;
-  }
-  
-/*   span.links > a { */
-/*     color: #00bed8; */
-/*     border-bottom: 3px solid #fff; */
-/*   } */
-</style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>
-  $(function() {
-    // SMOOTH SCROLL
-    $('a[href*=#]:not([href=#])').click(function() {
-      if (location.pathname.replace(/^//'') == this.pathname.replace(/^//'') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-              $('html,body').animate({
-                scrollTop: target.offset().top
-              }, 1000);
-            return false;
-        }
-      }
-    });
-    function isNear( $element, distance, event ) {
-        
-        var left = $element.offset().left - distance,
-            top = $element.offset().top - distance,
-            right = left + $element.width() + ( 2 * distance ),
-            bottom = top + $element.height() + ( 2 * distance ),
-            // get current location of cursor 
-            x = event.pageX,
-            y = event.pageY;
-            
-        return ( x > left && x < right && y > top && y < bottom );
-        
-    };
-    Math.Vector = function (x,y) {
-        this.x = x;
-        this.y = y;
-    }
-    Math.Vector.prototype = {
-        clone: function () {
-            return new Math.Vector(this.x, this.y);
-        },
-        negate: function () {
-            this.x = -this.x;
-            this.y = -this.y;
-            return this;
-        },
-        neg: function () {
-            return this.clone().negate();
-        },
-        addeq: function (v) {
-            this.x += v.x;
-            this.y += v.y;
-            return this;
-        },
-        subeq: function (v) {
-            return this.addeq(v.neg());
-        },
-        add: function (v) {
-            return this.clone().addeq(v);
-        },
-        sub: function (v) {
-            return this.clone().subeq(v);
-        },
-        multeq: function (c) {
-            this.x *= c;
-            this.y *= c;
-            return this;
-        },
-        diveq: function (c) {
-            this.x /= c;
-            this.y /= c;
-            return this;
-        },
-        mult: function (c) {
-            return this.clone().multeq(c);
-        },
-        div: function (c) {
-            return this.clone().diveq(c);
-        },
-        dot: function (v) {
-            return this.x * v.x + this.y * v.y;
-        },
-        length: function () {
-            return Math.sqrt(this.dot(this));
-        },
-        normal: function () {
-            return this.clone().diveq(this.length());
-        }
-    };
-    function evade($element, evt) {
-        var $this = $element,
-            corner = $this.offset(),
-            center = {x: corner.left + $this.outerWidth() / 2, y: corner.top + $this.outerHeight() / 2},
-            dist = new Math.Vector(center.x - evt.pageX, center.y - evt.pageY),
-            closest = 100;
-        
-        // proximity test
-        if (dist.length() >= closest) {
-          return;
-        }
-        // calculate new position
-        var delta = dist.normal().multeq(closest).sub(dist),
-          newCorner = {left: corner.left + delta.x, top: corner.top + delta.y};
-        // bounds check
-        if (newCorner.left + $this.outerWidth() > $(document).width()) {
-          newCorner.left = $(document).width() - $this.outerWidth();
-        }
-        else if (newCorner.top + $this.outerHeight() > $(document).height()) {
-          newCorner.top = $(document).height() - $this.outerHeight();
-        }
-        // move letter
-        $this.finish();
-        newCorner.left = Math.max(Math.min(newCorner.left, $this.data('baseLeft')+30), $this.data('baseLeft')-30);
-        newCorner.top = Math.max(Math.min(newCorner.top, $this.data('baseTop')+30), $this.data('baseTop')-30);
-        $this.animate({
-          top: newCorner.top - $this.data('baseTop'),
-          left: newCorner.left - $this.data('baseLeft')
-        });
-    }
-    $('h1 span').each(function(i, letter) {
-      $(letter).data('baseLeft', $(letter).offset().left);
-      $(letter).data('baseTop', $(letter).offset().top);
-    });
-    $(window).on('mousemove',function(e){
-      $('h1 span').each(function(i, letter) {
-        // if (i != 0) { return }
-        var $letter = $(letter);
-        if (isNear($letter, 150, e)) {
-          evade($letter, e);
-        } else {
-          if (parseInt($letter.css('top')) != 0 || parseInt($letter.css('left')) != 0) {
-            $letter.animate({top: 0, left: 0 });
-          }
-        }
-      });
-    });
-  });
-</script>
+</body>
 
 
 </html>
