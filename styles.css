@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600&display=swap');
 
 body {
-  background: #f2e4d5;
-  background: #f0ebe6;
-  background: #eae3dc;
+  background: #fff;
   font-family: 'Work Sans', sans-serif;
   font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
 }
