@@ -1,6 +1,6 @@
 ## Anna the Scavenger's Website ✨
 
-Please keep in mind that for now it is
+Please note that currently my wonderful website is
 
 UNDER CONSTRUCTION * UNDER CONSTRUCTION * UNDER CONSTRUCTION * UNDER CONSTRUCTION *
 
