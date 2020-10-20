@@ -50,17 +50,17 @@ a {
 }
 
 .container__links--email a::before {
-/*   content: '✺'; */
-  content: ' ';
+  content: '✺';
+/*   content: ' '; */
   display: inline-block;
   position: relative;
-  transform-origin: center center;
+/*   transform-origin: center center;
   top: -0.055em;
   height: 0.5em;
-  width: 0.5em;
+  width: 0.5em; */
   background-color: black;
   color: black;
-  border-radius: 100%;
+/*   border-radius: 100%; */
   margin-right: 0.4em;
 }
 
