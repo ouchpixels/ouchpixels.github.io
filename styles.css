@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600&display=swap');
 
 :root {
-  --width: 75vw;
+  --width: 70vw;
 }
 
 body {
@@ -13,12 +13,12 @@ body {
 
 .container__intro {
   margin: 6vw;
-/*   margin-left: 6vw; */
   width: var(--width);
 }
 
 .container__links {
   margin: 6vw;
+  width: var(--width);
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: baseline;
@@ -36,6 +36,19 @@ body {
 
 .highlight {
   color: #ea2dff;
+}
+
+.container__links--social::before {
+  content: ' ';
+  display: inline-block;
+  position: relative;   
+  transform-origin: center center;
+  top: -0.055em;
+  height: 0.5em;
+  width: 0.5em;
+  background-color: black;
+  color: black;
+  border-radius: 100%;
 }
 
 .container__links--social {
