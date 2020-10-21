@@ -38,7 +38,7 @@ body {
   color: #ea2dff;
 }
 
-.container__links--social::before {
+.container__links--social a::before {
   content: ' ';
   display: inline-block;
   position: relative;   
