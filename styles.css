@@ -12,8 +12,8 @@ body {
 }
 
 .container__intro {
-  margin: 5vw;
-  margin-left: 6vw;
+  margin: 6vw;
+/*   margin-left: 6vw; */
   width: var(--width);
 }
 
