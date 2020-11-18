@@ -35,7 +35,8 @@ body {
 }
 
 .highlight {
-  color: #ea2dff;
+  font-weight: bold;
+/*   #ea2dff */
 }
 
 .container__links--social a::before {
