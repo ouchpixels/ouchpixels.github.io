@@ -3,7 +3,7 @@
   --darkpink: #ff7c9b;
   --purple: #ecc4fc;
   --brown: #775d43;
-  --green: #415b3f;
+  --green: #ebffce;
   
 }
 
@@ -34,7 +34,7 @@ header {
 }
 
 .contact {
-  color: #efffd7;
+  color: var(--green);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
