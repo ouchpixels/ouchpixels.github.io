@@ -27,6 +27,7 @@ header {
 
 .wrapper {
   width: 60vw;
+  padding: 2rem;
   padding-left: 3rem;
   margin-top: 5rem;
   font-size: 1.35rem;
@@ -69,6 +70,7 @@ footer {
     width: 90vw;
     font-size: 3.85vw;
     padding: 1rem;
+    padding-left: 1rem;
     margin-top: 2.5rem;
   }
 }
