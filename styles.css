@@ -12,6 +12,11 @@ html {
   font-size: 16px;
 }
 
+@font-face {
+  font-family: "Mattone";
+  src: url("Mattone-Regular.otf") format("otf");
+}
+
 body {
   font-family: Arial;
   background: white;
