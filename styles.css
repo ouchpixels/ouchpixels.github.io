@@ -1,5 +1,3 @@
-@import url(https://assets.codepen.io/911157/Mattone-Regular.otf);
-
 :root {
   --pink: #ffbacf;
   --darkpink: #ff7c9b;
@@ -14,13 +12,8 @@ html {
   font-size: 16px;
 }
 
-@font-face {
-  font-family: "Mattone-Regular";
-  src: url("https://assets.codepen.io/911157/Mattone-Regular.otf") format("otf");
-}
-
 body {
-  font-family: "Mattone-Regular", Arial;
+  font-family: Arial;
   background: white;
   background: radial-gradient(circle, rgba(223,247,223,1) 0%, rgba(240,244,240,1) 39%, rgba(255,255,255,1) 100%);
   text-transform: uppercase;
