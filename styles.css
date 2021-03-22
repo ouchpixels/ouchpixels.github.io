@@ -12,8 +12,15 @@ html {
   font-size: 16px;
 }
 
+@font-face {
+    font-family: MattoneRegular;
+    src: url("../Mattone-Regular.otf") format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 body {
-  font-family: Arial;
+  font-family: MattoneRegular, Arial;
   background: white;
   background: radial-gradient(circle, rgba(223,247,223,1) 0%, rgba(240,244,240,1) 39%, rgba(255,255,255,1) 100%);
   text-transform: uppercase;
