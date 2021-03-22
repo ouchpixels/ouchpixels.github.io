@@ -3,7 +3,7 @@
   --darkpink: #ff7c9b;
   --purple: #ecc4fc;
   --brown: #775d43;
-  --green: #ebffce;
+  --green: #d8ff9f;
   --black: #202020;
   
 }
@@ -30,6 +30,7 @@ body {
 
 header {
   font-weight: bold;
+  text-transform: none;
 /*   color: var(--purple); */
 /*   -webkit-text-stroke-width: 1px; */
 /*   -webkit-text-stroke-color: black; */
